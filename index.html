@@ -40,19 +40,49 @@
 
     <main id="main">
       <section class="hero" id="top" aria-label="AOMAS custom boat on calm water">
-        <img class="hero-image" src="Media/boat_in_water.jpg" alt="AOMAS aluminium boat anchored in clear water near the beach">
+        <img class="hero-image" src="Media/boat_in_water.png" alt="AOMAS aluminium boat anchored in clear water near the beach">
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content reveal">
-          <p class="eyebrow">New Zealand custom aluminium boats</p>
-          <h1>A boat built around your kind of day</h1>
+          <p class="eyebrow">New Zealand introduces custom aluminium boats</p>
+          <h1>Performance, comfort, and freedom on the water</h1>
           <p class="hero-copy">
-            AOMAS creates tough, tidy, fully customisable boats for fishing missions, family escapes, and those very serious trips where someone definitely remembered the bait.
+            AOMAS - Built tough and finished clean, AOMAS boats are fully customisable for fishing missions, family getaways, and unforgettable days on the water.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="#contact">Start your build</a>
             <a class="button button-ghost" href="#gallery">View the fitout</a>
+            <a class="button button-ghost" href="Media/boat_video.mp4" data-video-open>Video tour</a>
           </div>
         </div>
+        <aside class="hero-promo reveal" aria-labelledby="launch-promo-title">
+          <span class="promo-ribbon">Special offer</span>
+          <p class="promo-kicker">Launch promo</p>
+          <h2 id="launch-promo-title">Order your new 8mtr AOMAS boat now and save</h2>
+          <div class="promo-price" aria-label="Launch promo pricing">
+            <span class="promo-was">
+              <span>Was</span>
+              <del>$280,000</del>
+            </span>
+            <span class="promo-now">
+              <span>Now</span>
+              <strong>$230,000</strong>
+            </span>
+          </div>
+          <p class="promo-extra">Plus we will throw in an $8,000 twin axle trailer.</p>
+          <details class="promo-details">
+            <summary>See what is included</summary>
+            <ul>
+              <li>Twin axle trailer with trailer WOF</li>
+              <li>350hp outboard</li>
+              <li>300L Fuel Tank</li>
+              <li>110L Fish Tank</li>
+              <li>SeaDek</li>
+              <li>5-year guarantee on boat hull</li>
+              <li>Fusion speakers</li>
+            </ul>
+          </details>
+          <p class="promo-condition">Conditions: 30% deposit.</p>
+        </aside>
         <div class="hero-panel reveal" aria-label="AOMAS build highlights">
           <div>
             <strong>Custom layouts</strong>
@@ -163,7 +193,7 @@
           </div>
 
           <div class="design-board reveal">
-            <img src="Media/boat_2d_design_complete.jpg" alt="AOMAS side profile boat design drawing" loading="lazy">
+            <img src="Media/boat_2d_design_complete.png" alt="AOMAS side profile boat design drawing" loading="lazy">
             <div class="design-note">
               <strong>Design preview</strong>
               <p>
@@ -248,12 +278,27 @@
             <span>Trailer preferences</span>
           </div>
           <div class="contact-actions">
-            <a class="button button-primary" href="mailto:hello@aomas.co.nz?subject=AOMAS%20boat%20build%20enquiry">Email AOMAS</a>
+            <a class="button button-primary" href="mailto:info@aomasmarine.com?subject=AOMAS%20boat%20build%20enquiry">Email AOMAS</a>
             <a class="button button-quiet" href="#customise">Explore custom options</a>
           </div>
         </div>
       </section>
     </main>
+
+    <div class="video-modal" data-video-modal aria-hidden="true" hidden>
+      <div class="video-modal-backdrop" data-video-close></div>
+      <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="video-tour-title">
+        <h2 class="sr-only" id="video-tour-title">AOMAS video tour</h2>
+        <button class="video-modal-close" type="button" aria-label="Close video" data-video-close>
+          <span class="sr-only">Close video</span>
+        </button>
+        <video class="video-tour-player" controls playsinline preload="metadata" data-video-player>
+          <source src="Media/boat_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="video-modal-status" data-video-status aria-live="polite"></p>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <strong>AOMAS</strong>
